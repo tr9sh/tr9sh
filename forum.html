@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - tr9sh</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your stylesheet -->
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZERE1Y876"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XZERE1Y876');
+    </script>
+</head>
+<body>
+    <header>
+        <h1>tr9sh Forum</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="forum.html" class="active">Forum</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Welcome to the Forum</h2>
+        <p>Discuss, ask questions, and connect with others!</p>
+
+        <!-- Forum Post Form -->
+        <div class="box">
+            <h3>Create a New Topic</h3>
+            <form>
+                <label for="topic-title">Topic Title:</label>
+                <input type="text" id="topic-title" name="topic-title" required><br>
+
+                <label for="topic-content">Message:</label><br>
+                <textarea id="topic-content" name="topic-content" rows="5" required></textarea><br>
+
+                <input type="submit" value="Post Topic">
+            </form>
+        </div>
+
+        <!-- Existing Topics -->
+        <div class="box">
+            <h3>Topics</h3>
+            <ul>
+                <li>
+                    <strong>How to debug JavaScript?</strong> 
+                    <em>by User123 on Dec 21, 2024</em>
+                    <p>Can someone help me understand how to debug JavaScript errors in the console?</p>
+                    <a href="#reply-1">View Replies (2)</a>
+                </li>
+                <li>
+                    <strong>Best tools for web development?</strong>
+                    <em>by CodeLover on Dec 20, 2024</em>
+                    <p>What are your favorite tools for building websites?</p>
+                    <a href="#reply-2">View Replies (3)</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 tr9sh. All rights reserved.</p>
+    </footer>
+</body>
+</html>

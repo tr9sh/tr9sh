@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - TR9SH</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
-    <!-- Google tag (gtag.js) -->
+    <title>Welcome to tr9sh</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the stylesheet -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZERE1Y876"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -15,28 +14,31 @@
 
       gtag('config', 'G-XZERE1Y876');
     </script>
-    
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
-        <h1>Welcome to TR9SH!</h1>
+        <h1>Welcome to tr9sh</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="forum.html">Forum</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Your One-Stop Shop for Engineering, Coding, and DIY Projects</h2>
-        <p>Welcome to TR9SH, where we share tutorials, debugging tips, coding tricks, and DIY projects!</p>
+        <section>
+            <h2>Explore Coding, Debugging, and DIY Engineering</h2>
+            <p>Your go-to place for tutorials, engineering insights, and creative projects!</p>
+            <a href="about.html" class="button">Learn More About Us</a>
+            <a href="forum.html" class="button">Join the Forum</a>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 TR9SH. All Rights Reserved.</p>
+        <p>&copy; 2024 tr9sh. All rights reserved.</p>
     </footer>
 </body>
 </html>
