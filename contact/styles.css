@@ -1,0 +1,181 @@
+/* styles.css - Windows 95-inspired design */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "MS Sans Serif", Arial, sans-serif; /* Classic Windows font */
+    background-color: #c3c7cb; /* Gray background */
+    color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #0078d7; /* Classic Windows 95 blue */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black; /* Bold black border */
+    box-shadow: 2px 2px 0 #808080; /* Simple shadow effect */
+}
+
+header h1 {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0 #000; /* Subtle text shadow for depth */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 #808080;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    display: block;
+    border: 2px outset #d4d0c8; /* Windows 95-style button */
+}
+
+nav ul li a:hover {
+    border: 2px inset #d4d0c8; /* Inverted effect on hover */
+    background-color: #c3c7cb;
+}
+
+/* Main Content */
+main {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 #808080;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+main h2 {
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 #808080;
+    margin-top: 20px;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    background-color: #f0f0f0;
+    color: black;
+    border: 2px outset #d4d0c8;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: "MS Sans Serif", Arial, sans-serif;
+}
+
+button:hover, input[type="submit"]:hover {
+    border: 2px inset #d4d0c8;
+    background-color: #c3c7cb;
+}
+
+/* Form Inputs */
+input, textarea {
+    border: 2px solid #808080;
+    background-color: white;
+    padding: 5px;
+    font-family: "MS Sans Serif", Arial, sans-serif;
+    width: 100%;
+    max-width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Hyperlinks */
+a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #551a8b;
+    text-decoration: none;
+}
+
+/* Windows 95 Border Style Box */
+.box {
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 #808080;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    background-color: #f0f0f0;
+}
+
+th {
+    background-color: #d4d0c8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+}
